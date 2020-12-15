@@ -1,7 +1,11 @@
-const Top20Entry = (label) => {
+const Top20Entry = ({name, artist, position}) => {
     return (
         <>
-            <li>{label}</li>
+            <li>
+                <h4>Title: {name}</h4>
+                <p>Artist: {artist}</p>
+                <p>Chart Postition: {position}</p>
+            </li>
         </>
     )
 }

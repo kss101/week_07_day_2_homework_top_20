@@ -3,13 +3,14 @@ import Top20Entry from "./Top20Entry";
 const Top20List = ({top20UKSongs}) => {
 
     const top20UKSongsNodes = top20UKSongs.map((song) => {
-        
-        let label = song["im:name"].label;
+
+        let name = song["im:name"].label;
+        let artist = song["im:artist"].label;
         let key = top20UKSongs.indexOf(song);
 
         return(
 
-           <Top20Entry label={label} key={key} />
+           <Top20Entry name={name} artist={artist} position={key + 1} key={key} />
         )
     })
 
