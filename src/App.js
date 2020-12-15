@@ -1,9 +1,9 @@
-
+import Top20Container from "./containers/Top20Container";
 import './App.css';
 
 function App() {
   return (
-    <h1>Hey!</h1>
+    <Top20Container />
   );
 }
 
