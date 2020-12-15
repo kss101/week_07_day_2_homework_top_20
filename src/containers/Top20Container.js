@@ -19,11 +19,12 @@ const Top20Comtainer = () => {
         useEffect(() => {
             getTop20();
           },[]);
+          if(!top20UKSongs) return null;
 
     return (
         <>
             <h1>UK Top 20 Listings...</h1>
-            <Top20List />
+            <Top20List top20UKSongs={top20UKSongs.feed.entry} />
         </>
     )
 }

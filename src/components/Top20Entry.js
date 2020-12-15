@@ -1,7 +1,7 @@
-const Top20Entry = () => {
+const Top20Entry = (label) => {
     return (
         <>
-            <li>Top 20 Entry</li>
+            <li>{label}</li>
         </>
     )
 }
